@@ -84,6 +84,7 @@ async function fetchAndProcessCSV() {
 }
 
 function scheduleJobs() {
+
     // schedule.scheduleJob('0 10 * * *', fetchAndProcessCSV); // Runs 10 AM
     // schedule.scheduleJob('0 17 * * *', fetchAndProcessCSV); // Runs 5 PM
     setImmediate(fetchAndProcessCSV);
